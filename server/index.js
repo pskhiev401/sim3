@@ -29,11 +29,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // //***** CONNECTION TO DB *******
-// massive(process.env.CONNECTION_STRING)
-//   .then(dbInstance => {
-//     app.set("db", dbInstance);
-//   })
-//   .catch(err => console.log(err));
+massive(process.env.CONNECTION_STRING)
+  .then(dbInstance => {
+    app.set("db", dbInstance);
+  })
+  .catch(err => console.log(err));
 
 app.listen(port, () => {
   console.log(`BEEP Listening on port ${port}`);
