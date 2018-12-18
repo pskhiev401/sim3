@@ -1,0 +1,14 @@
+.Auth {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(255, 112, 166);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 112, 166, 1) 12%,
+    rgba(255, 170, 112, 1) 42%,
+    rgba(255, 214, 112, 1) 72%,
+    rgba(233, 255, 112, 1) 100%
+  );
+  background-position: center;
+  background-size: cover;
+}

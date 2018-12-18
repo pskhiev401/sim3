@@ -32,6 +32,7 @@ app.use(passport.session());
 massive(process.env.CONNECTION_STRING)
   .then(dbInstance => {
     app.set("db", dbInstance);
+    // dbInstance.init();
   })
   .catch(err => console.log(err));
 
